@@ -1,0 +1,11 @@
+RewriteEngine on
+
+
+RewriteCond %(REqUEST_URI) !\.css$
+RewriteCond %(REqUEST_URI) !\.html$
+RewriteCond %(REqUEST_URI) !\.jpg$
+RewriteCond %(REqUEST_URI) !\.png$
+RewriteCond %(REqUEST_URI) !\.zip
+
+
+RewriteRule . index.php
